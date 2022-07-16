@@ -1,0 +1,14 @@
+.nav {
+  display: inline-block;
+  .nav__menu {
+    list-style-type: none;
+    display: flex;
+    gap: 60px;
+    .nav__link {
+      color: black;
+      &:hover {
+        color: $color-primary;
+      }
+    }
+  }
+}

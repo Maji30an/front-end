@@ -1,0 +1,24 @@
+@import "reset";
+
+// variables
+@import "variables";
+
+// mixins
+@import "mixins";
+
+/* style css */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+@import "header";
+@import "logo";
+@import "nav";
+
+.btn {
+  @include btn(center, capitalize)
+}
+
+@import "team-unit";
+@import "title";

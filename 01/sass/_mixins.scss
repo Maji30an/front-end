@@ -1,0 +1,10 @@
+@mixin btn($justify-content, $text-case) {
+  width: 140px;
+  background-color: $color-primary;
+  display: inline-flex;
+  color: white;
+  font-size: 13px;
+  padding: 8px 20px;
+  justify-content: $justify-content;
+  text-transform: $text-case;
+}
