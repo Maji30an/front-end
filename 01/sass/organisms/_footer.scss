@@ -48,6 +48,7 @@
       &__title {
         @include font(500, 14px, 16px);
         color: $color-light-gray;
+        margin-bottom: 4px;
       }
       &__type {
         @include font(600, 18px, 20px);
