@@ -6,7 +6,7 @@
   background-color: white;
   z-index: 1;
   position: relative;
-  margin: 4.7em 0;
+  margin: 4.7em 0 14em;
   .title {
     margin-bottom: 6em;
     &__text {
@@ -29,9 +29,9 @@
     }
   }
   &__btn {
-    @include btn(normal, 206px);
     @include font(400, 20px, 24px);
     gap: 30px;
     margin-left: 5px;
+    padding: 16px 33.4px;
   }
 }

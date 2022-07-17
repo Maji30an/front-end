@@ -28,7 +28,7 @@
     }
   }
   .nav {
-    margin: 70px 0;
+    margin: 40px 0 70px;
     .nav__link {
       color: white;
       &:hover {
@@ -42,12 +42,11 @@
     align-items: center;
     .cantact {
       width: 570px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+      @extend .info;
       &__title {
         @include font(500, 14px, 16px);
         color: $color-light-gray;
+        display: block;
         margin-bottom: 4px;
       }
       &__type {
