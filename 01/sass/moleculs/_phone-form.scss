@@ -1,0 +1,37 @@
+.phone-form {
+  width: 870px;
+  padding: 60px;
+  padding-bottom: 80px;
+  box-shadow: -10px 10px 50px rgba(13, 107, 106, 0.08);
+  background-color: white;
+  z-index: 1;
+  position: relative;
+  margin: 4.7em 0;
+  .title {
+    margin-bottom: 6em;
+    &__text {
+      width: 530px;
+      position: relative;
+      top: 20px;
+    }
+  }
+  &__input {
+    width: 534px;
+    border: 1px solid $color-light-gray;
+    border-radius: unset;
+    padding: 16px 32px;
+    @include font(500, 20px, 24px);
+    &::placeholder {
+      color: $color-gray;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+  &__btn {
+    @include btn(normal, 206px);
+    @include font(400, 20px, 24px);
+    gap: 30px;
+    margin-left: 5px;
+  }
+}

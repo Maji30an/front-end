@@ -10,7 +10,8 @@
     align-items: center;
     padding: 14px 0;
     .btn {
-      @include btn(capitalize, 14px, 16px);
+      @include btn(capitalize, 170px);
+      @include font(400, 14px, 16px);
     }
   }
   &__content {
@@ -36,8 +37,8 @@
         @include font(500, 18px, 24px);
       }
       .btn {
-        @include btn(uppercase, 20px, 24px);
-        width: 229px;
+        @include btn(uppercase, 229px);
+        @include font(400, 20px, 24px);
         gap: 30px;
       }
     }

@@ -1,11 +1,8 @@
-@mixin btn($text-case, $size, $line-height) {
-  width: 170px;
+@mixin btn($text-case, $width) {
+  width: $width;
   background-color: $color-primary;
   display: inline-flex;
   color: white;
-  font-size: $size;
-  font-weight: 400;
-  line-height: $line-height;
   padding: 16px 0;
   justify-content: center;
   align-items: center;

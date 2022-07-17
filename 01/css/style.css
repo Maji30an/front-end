@@ -32,13 +32,13 @@
   background-color: #0D6B6A;
   display: inline-flex;
   color: white;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 16px;
   padding: 16px 0;
   justify-content: center;
   align-items: center;
   text-transform: capitalize;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
 }
 .header__content {
   margin-top: 4em;
@@ -69,18 +69,17 @@
   line-height: 24px;
 }
 .header__content .header__note .btn {
-  width: 170px;
+  width: 229px;
   background-color: #0D6B6A;
   display: inline-flex;
   color: white;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 24px;
   padding: 16px 0;
   justify-content: center;
   align-items: center;
   text-transform: uppercase;
-  width: 229px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
   gap: 30px;
 }
 .header__content .header__section-img {
@@ -173,23 +172,32 @@
 .team-unit__persons .person__img {
   width: 100%;
 }
+.team-unit__persons .person__name {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 20px;
+}
+.team-unit__persons .person__job {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+}
 .team-unit__persons .person__details {
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
   top: 0;
-  font-family: initial;
-  display: none;
+  display: flex;
   flex-direction: column;
   gap: 10px;
-  font-size: 12px;
-  font-weight: bold;
-  padding: 10.5em 10em 0 1.5em;
+  padding: 9em 10em 0 1.5em;
   background-color: #0D6B6A;
+  opacity: 0;
+  transition: all 0.4s ease;
 }
 .team-unit__persons .person:hover .person__details {
-  display: flex;
+  opacity: 0.6;
 }
 
 .title {
@@ -282,7 +290,16 @@
   background-image: url("/01/img/bg-work-process.png");
   background-repeat: no-repeat;
   background-size: cover;
+  height: 1490px;
   padding: 90px 0;
+}
+.work-process .container {
+  position: relative;
+}
+.work-process .container .work-process__img {
+  position: absolute;
+  right: 0;
+  bottom: -23em;
 }
 .work-process .process-line {
   border: none;
@@ -366,6 +383,59 @@
   line-height: 20px;
   color: #666666;
   padding-bottom: 20px;
+}
+
+.phone-form {
+  width: 870px;
+  padding: 60px;
+  padding-bottom: 80px;
+  box-shadow: -10px 10px 50px rgba(13, 107, 106, 0.08);
+  background-color: white;
+  z-index: 1;
+  position: relative;
+  margin: 4.7em 0;
+}
+.phone-form .title {
+  margin-bottom: 6em;
+}
+.phone-form .title__text {
+  width: 530px;
+  position: relative;
+  top: 20px;
+}
+.phone-form__input {
+  width: 534px;
+  border: 1px solid #DDDDDD;
+  border-radius: unset;
+  padding: 16px 32px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+.phone-form__input::placeholder {
+  color: #AAAAAA;
+}
+.phone-form__input:focus {
+  outline: none;
+}
+.phone-form__btn {
+  width: 206px;
+  background-color: #0D6B6A;
+  display: inline-flex;
+  color: white;
+  padding: 16px 0;
+  justify-content: center;
+  align-items: center;
+  text-transform: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  gap: 30px;
+  margin-left: 5px;
+}
+
+.footer {
+  background-color: #0D6B6A;
 }
 
 /*# sourceMappingURL=style.css.map */
