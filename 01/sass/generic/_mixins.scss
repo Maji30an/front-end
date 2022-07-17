@@ -1,0 +1,33 @@
+@mixin btn($text-case, $size, $line-height) {
+  width: 170px;
+  background-color: $color-primary;
+  display: inline-flex;
+  color: white;
+  font-size: $size;
+  font-weight: 400;
+  line-height: $line-height;
+  padding: 16px 0;
+  justify-content: center;
+  align-items: center;
+  text-transform: $text-case;
+}
+
+@mixin font($weight, $size, $line) {
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $line;
+}
+
+@mixin for-size($size) {
+  @if $size == phone-only {
+    @media (max-width: 599px) { @content; }
+  } @else if $size == tablet-portrait-up {
+    @media (min-width: 600px) { @content; }
+  } @else if $size == tablet-landscape-up {
+    @media (min-width: 900px) { @content; }
+  } @else if $size == desktop-up {
+    @media (min-width: 1200px) { @content; }
+  } @else if $size == big-desktop-up {
+    @media (min-width: 1800px) { @content; }
+  }
+}
