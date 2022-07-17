@@ -15,7 +15,7 @@
 }
 
 .header {
-  background-image: url("/01/img/bg-header.png");
+  background-image: url("/01/img/bg-header.svg");
   background-repeat: no-repeat;
   background-size: cover;
   padding-bottom: 4.75em;
@@ -119,11 +119,10 @@
 .nav .nav__menu {
   list-style-type: none;
   display: flex;
-  gap: 60px;
+  gap: 50px;
 }
 .nav .nav__menu .nav__link {
   color: black;
-  font-style: normal;
   font-weight: 500;
   font-size: 18px;
   line-height: 20px;
@@ -148,7 +147,7 @@
   width: 468px;
 }
 .team-unit__co-worker .team-unit__number {
-  background-image: url("/01/img/6.PNG");
+  background-image: url("/01/img/6.png");
   background-repeat: no-repeat;
   height: 220px;
   width: 172px;
@@ -194,7 +193,7 @@
   padding: 9em 10em 0 1.5em;
   background-color: #0D6B6A;
   opacity: 0;
-  transition: all 0.4s ease;
+  transition: all 0.3s ease;
 }
 .team-unit__persons .person:hover .person__details {
   opacity: 0.6;
@@ -287,7 +286,7 @@
 }
 
 .work-process {
-  background-image: url("/01/img/bg-work-process.png");
+  background-image: url("/01/img/bg-work-process.svg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 1490px;
@@ -436,6 +435,76 @@
 
 .footer {
   background-color: #0D6B6A;
+  padding: 50px 0 70px;
+  color: white;
+}
+.footer .line {
+  height: 280px;
+  background-image: url("/01/img/line.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding-top: 50px;
+}
+.footer .line .footer__note {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  width: 770px;
+  text-align: center;
+  color: #DDDDDD;
+  margin: 30px auto 50px;
+}
+.footer .line .social-icons {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.footer .line .social-icons__img {
+  height: 48px;
+}
+.footer .nav {
+  margin: 70px 0;
+}
+.footer .nav .nav__link {
+  color: white;
+}
+.footer .nav .nav__link:hover {
+  color: #AAAAAA;
+}
+.footer .info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer .info .cantact {
+  width: 570px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer .info .cantact__title {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #DDDDDD;
+}
+.footer .info .cantact__type {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 20px;
+}
+.footer .info .cantact .call {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.footer .info .copy-right {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #DDDDDD;
 }
 
 /*# sourceMappingURL=style.css.map */

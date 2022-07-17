@@ -12,7 +12,7 @@
     padding: 60px 45px;
     width: 468px;
     .team-unit__number {
-      background-image: url("/01/img/6.PNG");
+      background-image: url("/01/img/6.png");
       background-repeat: no-repeat;
       height: 220px;
       width: 172px;
@@ -51,7 +51,7 @@
         padding: 9em 10em 0 1.5em;
         background-color: $color-primary;
         opacity: 0;
-        transition: all 0.4s ease;
+        transition: all 0.3s ease;
       }
       &:hover {
         .person__details {

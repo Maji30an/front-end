@@ -3,13 +3,10 @@
   .nav__menu {
     list-style-type: none;
     display: flex;
-    gap: 60px;
+    gap: 50px;
     .nav__link {
       color: black;
-      font-style: normal;
-      font-weight: 500;
-      font-size: 18px;
-      line-height: 20px;
+      @include font(500, 18px, 20px);
       &:hover {
         color: $color-primary;
       }
