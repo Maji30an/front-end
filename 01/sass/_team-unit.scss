@@ -1,33 +1,36 @@
 .team-unit {
+  margin-bottom: 11em;
   &__content {
     background-color: $color-primary;
     color: white;
     display: flex;
   }
-  &__abstract {
-    padding: 60px 45px;
-    width: 70%;
+  &__co-worker {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding: 60px 45px;
+    width: 468px;
     .team-unit__number {
       background-image: url("/01/img/6.PNG");
       background-repeat: no-repeat;
-      height: 170px;
+      height: 220px;
+      width: 172px;
     }
     .team-unit__text {
-      font-family: initial;
-      font-weight: bold;
-      font-size: 22px;
+      font-weight: 600;
+      font-size: 28px;
+      line-height: 32px;
     }
   }
-  &__work {
+  &__persons {
+    width: 702px;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
     .person {
-      width: 200px;
-      height: 200px;
+      width: 234px;
+      height: 234px;
       position: relative;
       &__img {
         width: 100%;
@@ -45,7 +48,7 @@
         font-size: 12px;
         font-weight: bold;
         padding: 10.5em 10em 0 1.5em;
-        background-color: #0D6B6A61;
+        background-color: $color-primary;
       }
       &:hover {
         .person__details {
