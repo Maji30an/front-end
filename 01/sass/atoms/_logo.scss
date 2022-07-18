@@ -5,9 +5,3 @@
   display: inline-block;
   letter-spacing: 0.08em;
 }
-
-@include for-size(phone-only) {
-  .logo {
-    @include font(null, 20px, 24px);
-  }
-}

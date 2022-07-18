@@ -26,12 +26,11 @@
   }
   .comments__slider {
     display: flex;
-    flex-wrap: wrap;
     gap: 30px;
     width: 1570px;
     margin-bottom: 60px;
     .comment {
-      width: 370px;
+      width: 23.57%;
       box-shadow: 0 0 30px rgba(13, 107, 106, 0.1);
       padding: 40px;
       &__header {
@@ -57,6 +56,24 @@
           color: $color-primary;
         }
       }
+    }
+  }
+}
+
+@include for-size(phone-only) {
+  .comments {
+    padding: 0 15px;
+    margin-bottom: 8em;
+    .dot {
+      display: none;
+    }
+    .comments__slider {
+      margin-bottom: 40px;
+    }
+    .comments__buttons-slider {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
     }
   }
 }

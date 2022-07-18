@@ -7,7 +7,7 @@
     height: 280px;
     background-image: url("/01/img/line.svg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     text-align: center;
     padding-top: 50px;
     .footer__note {
@@ -61,6 +61,52 @@
     .copy-right {
       @include font(500, 16px, 20px);
       color: $color-light-gray;
+    }
+  }
+}
+
+@include for-size(phone-only) {
+  .footer {
+    padding: 20px 0 40px;
+    .line-small {
+      background-image: url("/01/img/line.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      padding: 4em 0 0;
+    }
+    .line {
+      .footer__note {
+        width: 100%;
+        margin: 24px auto 32px;
+        padding: 0 15px;
+      }
+    }
+    .nav {
+      margin: 2em 0 30px;
+      &__menu {
+        gap: 20px;
+        align-items: center;
+        .nav__link {
+          padding: 0;
+        }
+      }
+    }
+    .info {
+      flex-direction: column;
+      gap: 40px;
+      .cantact {
+        flex-direction: column;
+        .call {
+          flex-direction: column;
+          gap: 10px;
+        }
+        &__details {
+          text-align: center;
+        }
+      }
+      .copy-right {
+        margin: 40px auto;
+      }
     }
   }
 }

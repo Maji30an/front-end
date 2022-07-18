@@ -121,6 +121,9 @@
           background-image: url("/01/img/bg-header.svg");
           padding: 6px 6px 16px 6px;
           width: 100%;
+          .logo {
+            @include font(null, 20px, 24px);
+          }
         }
         .btn {
           width: 100%;
