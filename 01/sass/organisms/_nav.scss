@@ -1,6 +1,6 @@
 .nav {
   display: inline-block;
-  .nav__menu {
+  &__menu {
     list-style-type: none;
     display: flex;
     gap: 50px;
@@ -9,6 +9,30 @@
       @include font(500, 18px, 20px);
       &:hover {
         color: $color-primary;
+      }
+    }
+  }
+}
+
+@include for-size(phone-only) {
+  .nav {
+    display: block;
+    margin-top: 8px;
+    width: 100%;
+    &__menu {
+      flex-direction: column;
+      gap: 0;
+      .nav__item {
+        &:hover {
+          background-color: rgba(221, 221, 221, 0.2);
+          .nav__link {
+            color: $color-primary;
+          }
+        }
+      }
+      .nav__link {
+        @include font(null, null, 40px);
+        padding-left: 16px;
       }
     }
   }

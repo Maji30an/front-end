@@ -1,7 +1,14 @@
-@mixin font($weight, $size, $line) {
+@mixin font($weight:null, $size:null, $line:null) {
   font-weight: $weight;
   font-size: $size;
   line-height: $line;
+}
+
+@mixin flex($flex: flex, $justify:null, $align:null, $direction: null) {
+  display: $flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
 }
 
 @mixin for-size($size) {

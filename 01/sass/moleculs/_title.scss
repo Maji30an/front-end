@@ -6,13 +6,24 @@
   height: 40px;
   &__line {
     background-color: $color-primary;
-    width: 70px;
-    height: 4px;
+    padding: 2px 35px;
     border-radius: 5px;
   }
   &__text {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 40px;
+    @include font(700, 36px, 40px);
+  }
+}
+
+@include for-size(phone-only) {
+  .title {
+    gap: 16px;
+    margin-bottom: 2em;
+    padding: 0 15px;
+    &__line {
+      padding: 2px 20px;
+    }
+    &__text {
+      @include font(null, 20px, 28px);
+    }
   }
 }

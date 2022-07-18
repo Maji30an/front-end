@@ -1,9 +1,13 @@
 .logo {
+  @include font(600, 28px, 30px);
   text-transform: uppercase;
   font-style: normal;
-  font-size: 28px;
-  font-weight: 600;
   display: inline-block;
-  line-height: 30px;
   letter-spacing: 0.08em;
+}
+
+@include for-size(phone-only) {
+  .logo {
+    @include font(null, 20px, 24px);
+  }
 }
