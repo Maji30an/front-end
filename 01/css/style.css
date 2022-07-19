@@ -588,8 +588,63 @@
   padding-bottom: 20px;
 }
 
+@media (max-width: 599px) {
+  .team-unit {
+    margin-bottom: 8em;
+    padding: 0 16px;
+  }
+  .team-unit__content {
+    flex-direction: column;
+  }
+  .team-unit__content .team-unit__co-worker {
+    width: 100%;
+    padding: 0;
+  }
+  .team-unit__content .team-unit__co-worker .team-unit__number {
+    background-size: contain;
+    width: 40%;
+    margin: 30px 0 0 30px;
+  }
+  .team-unit__content .team-unit__co-worker .team-unit__text {
+    font-size: 24px;
+    padding: 0 16px 30px;
+  }
+  .team-unit__content .team-unit__persons {
+    width: 100%;
+    justify-content: flex-start;
+  }
+  .team-unit__content .team-unit__persons .person {
+    width: 50%;
+    height: 170px;
+  }
+  .team-unit__content .team-unit__persons .person__details {
+    padding: 6em 4em 0 1em;
+  }
+  .team-unit__content .team-unit__persons .person__name {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .team-unit__content .team-unit__persons .person__job {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
+@media (max-width: 599px) {
+  .work-process .container {
+    padding: 0 16px;
+  }
+  .work-process .container .process-line {
+    display: none;
+  }
+  .work-process .container .process-line .work-process__process {
+    flex-direction: column;
+  }
+}
 .phone-form {
-  width: 870px;
+  width: 74%;
+  display: inline-block;
   padding: 60px;
   padding-bottom: 80px;
   box-shadow: -10px 10px 50px rgba(13, 107, 106, 0.08);
@@ -606,8 +661,12 @@
   position: relative;
   top: 20px;
 }
+.phone-form__group {
+  display: flex;
+  gap: 4px;
+}
 .phone-form__input {
-  width: 534px;
+  flex-grow: 1;
   border: 1px solid #DDDDDD;
   border-radius: unset;
   padding: 16px 32px;
@@ -626,10 +685,39 @@
   font-size: 20px;
   line-height: 24px;
   gap: 30px;
-  margin-left: 5px;
   padding: 16px 33px;
 }
 
+@media (max-width: 599px) {
+  .phone .container {
+    padding: 0 16px;
+  }
+  .phone .container .phone-form {
+    width: 100%;
+    padding: 20px;
+    margin: 40px 0 80px;
+  }
+  .phone .container .phone-form .title {
+    margin-bottom: 40px;
+  }
+  .phone .container .phone-form .title__text {
+    width: 100%;
+  }
+  .phone .container .phone-form__group {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .phone .container .phone-form__input {
+    padding: 10px 16px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .phone .container .phone-form__btn {
+    font-size: 18px;
+    gap: 16px;
+    padding: 8px 85px;
+  }
+}
 .footer {
   background-color: #0D6B6A;
   padding: 50px 0 70px;

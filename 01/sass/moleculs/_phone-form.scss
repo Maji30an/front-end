@@ -1,5 +1,6 @@
 .phone-form {
-  width: 870px;
+  width: 74%;
+  display: inline-block;
   padding: 60px;
   padding-bottom: 80px;
   box-shadow: -10px 10px 50px rgba(13, 107, 106, 0.08);
@@ -15,8 +16,12 @@
       top: 20px;
     }
   }
+  &__group {
+    @include flex(flex);
+    gap: 4px;
+  }
   &__input {
-    width: 534px;
+    flex-grow: 1;
     border: 1px solid $color-light-gray;
     border-radius: unset;
     padding: 16px 32px;
@@ -31,7 +36,44 @@
   &__btn {
     @include font(400, 20px, 24px);
     gap: 30px;
-    margin-left: 5px;
     padding: 16px 33px;
   }
 }
+
+@include for-size(phone-only) {
+  .phone {
+    .container {
+      padding: 0 16px;
+      .phone-form {
+        width: 100%;
+        padding: 20px;
+        margin: 40px 0 80px;
+        .title {
+          margin-bottom: 40px;
+          &__text {
+            width: 100%;
+          }
+        }
+        &__group {
+          flex-direction: column;
+          gap: 16px;
+        }
+        &__input {
+          padding: 10px 16px;
+          @include font(null, 16px, 20px);
+        }
+        &__btn {
+          @include font(null, 18px, null);
+          gap: 16px;
+          padding: 8px 85px;
+        }
+      }
+    }
+  }
+}
+
+@include for-size(tablet-portrait-up) {}
+
+@include for-size(tablet-landscape-up) {}
+
+@include for-size(desktop-up) {}
