@@ -275,7 +275,7 @@
   flex-direction: column;
   justify-content: space-between;
   padding: 60px 45px;
-  width: 40%;
+  max-width: 40%;
 }
 .team-unit__co-worker .team-unit__number {
   background-image: url("/01/img/6.png");
@@ -290,23 +290,26 @@
   line-height: 32px;
 }
 .team-unit__persons {
-  width: 702px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-end;
+  max-width: 60%;
 }
 .team-unit__persons .person {
-  width: 234px;
-  height: 234px;
+  max-width: 234px;
+  max-height: 234px;
   position: relative;
 }
 .team-unit__persons .person__img {
+  display: block;
   width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .team-unit__persons .person__name {
   font-weight: 600;
   font-size: 18px;
   line-height: 20px;
+  width: 50%;
 }
 .team-unit__persons .person__job {
   font-weight: 500;
@@ -315,14 +318,14 @@
 }
 .team-unit__persons .person__details {
   position: absolute;
-  bottom: 0;
+  top: 0;
   left: 0;
   right: 0;
-  top: 0;
+  bottom: 0;
+  padding: 140px 0 0 30px;
   display: flex;
   flex-direction: column;
   gap: 10px;
-  padding: 9em 10em 0 1.5em;
   background-color: #0D6B6A;
   opacity: 0;
   transition: all 0.3s ease;
@@ -340,7 +343,7 @@
     flex-direction: column;
   }
   .team-unit__content .team-unit__co-worker {
-    width: 100%;
+    max-width: 100%;
     padding: 0;
   }
   .team-unit__content .team-unit__co-worker .team-unit__number {
@@ -353,15 +356,15 @@
     padding: 0 16px 30px;
   }
   .team-unit__content .team-unit__persons {
-    width: 100%;
+    max-width: 100%;
     justify-content: flex-start;
   }
   .team-unit__content .team-unit__persons .person {
-    width: 50%;
-    height: 170px;
+    width: 164px;
+    height: 164px;
   }
   .team-unit__content .team-unit__persons .person__details {
-    padding: 6em 4em 0 1em;
+    padding: 85px 0 0 20px;
   }
   .team-unit__content .team-unit__persons .person__name {
     font-weight: 600;
@@ -584,7 +587,7 @@
 @media (max-width: 599px) {
   .work-process {
     height: 100%;
-    padding: 0 0 148px;
+    padding: 40px 0 148px;
   }
   .work-process .container {
     padding: 0 16px;

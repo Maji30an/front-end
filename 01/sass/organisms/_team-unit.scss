@@ -10,7 +10,7 @@
     flex-direction: column;
     justify-content: space-between;
     padding: 60px 45px;
-    width: 40%;
+    max-width: 40%;
     .team-unit__number {
       background-image: url("/01/img/6.png");
       background-repeat: no-repeat;
@@ -23,33 +23,36 @@
     }
   }
   &__persons {
-    width: 702px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-end;
+    max-width: 60%;
     .person {
-      width: 234px;
-      height: 234px;
+      max-width: 234px;
+      max-height: 234px;
       position: relative;
       &__img {
+        display: block;
         width: 100%;
+        height: 100%;
+        object-fit: cover;
       }
       &__name {
         @include font(600, 18px, 20px);
+        width: 50%;
       }
       &__job {
         @include font(500, 14px, 16px);
       }
       &__details {
         position: absolute;
-        bottom: 0;
+        top: 0;
         left: 0;
         right: 0;
-        top: 0;
+        bottom: 0;
+        padding: 140px 0 0 30px;
         display: flex;
         flex-direction: column;
         gap: 10px;
-        padding: 9em 10em 0 1.5em;
         background-color: $color-primary;
         opacity: 0;
         transition: all 0.3s ease;
@@ -70,7 +73,7 @@
     &__content {
       flex-direction: column;
       .team-unit__co-worker {
-        width: 100%;
+        max-width: 100%;
         padding: 0;
         .team-unit__number {
           background-size: contain;
@@ -83,13 +86,13 @@
         }
       }
       .team-unit__persons {
-        width: 100%;
+        max-width: 100%;
         justify-content: flex-start;
         .person {
-          width: 50%;
-          height: 170px;
+          width: 164px;
+          height: 164px;
           &__details {
-            padding: 6em 4em 0 1em;
+            padding: 85px 0 0 20px;
           }
           &__name {
             @include font(600, 16px, 18px);
