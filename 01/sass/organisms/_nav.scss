@@ -37,3 +37,9 @@
     }
   }
 }
+
+@include for-size(tablet-portrait-up) {}
+
+@include for-size(tablet-landscape-up) {}
+
+@include for-size(desktop-up) {}

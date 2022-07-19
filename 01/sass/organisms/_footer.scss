@@ -78,7 +78,7 @@
       .footer__note {
         width: 100%;
         margin: 24px auto 32px;
-        padding: 0 15px;
+        padding: 0 16px;
       }
     }
     .nav {
@@ -110,3 +110,9 @@
     }
   }
 }
+
+@include for-size(tablet-portrait-up) {}
+
+@include for-size(tablet-landscape-up) {}
+
+@include for-size(desktop-up) {}

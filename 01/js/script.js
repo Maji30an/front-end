@@ -23,3 +23,28 @@ function close() {
         menu.style.display = 'none';
     }, 1000);
 }
+
+const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    slidesPerView: 'auto',
+    spaceBetween: 30,
+    direction: 'horizontal',
+    loop: true,
+
+    // If we need pagination
+    pagination: {
+        el: '.dot',
+    },
+
+    // Navigation arrows
+    navigation: {
+        nextEl: '.comments__button-slider-next',
+        prevEl: '.comments__button-slider-prev',
+    },
+
+    // And if we need scrollbar
+    scrollbar: {
+        el: '.swiper-scrollbar',
+    },
+});
+

@@ -1,6 +1,6 @@
 .comments {
   overflow: hidden;
-  margin-bottom: 15em;
+  margin-bottom: 200px;
   &__button-slider {
     width: 44px;
     height: 44px;
@@ -14,6 +14,7 @@
   }
   .dot {
     margin-left: auto;
+    width: auto;
     &__list {
       display: flex;
       font-size: 20px;
@@ -23,10 +24,12 @@
         color: $color-primary;
       }
     }
+    .swiper-pagination-bullet-active {
+      background: $color-primary;
+    }
   }
   .comments__slider {
     display: flex;
-    gap: 30px;
     width: 1570px;
     margin-bottom: 60px;
     .comment {
@@ -62,7 +65,7 @@
 
 @include for-size(phone-only) {
   .comments {
-    padding: 0 15px;
+    padding: 0 16px;
     margin-bottom: 8em;
     .dot {
       display: none;
@@ -77,3 +80,9 @@
     }
   }
 }
+
+@include for-size(tablet-portrait-up) {}
+
+@include for-size(tablet-landscape-up) {}
+
+@include for-size(desktop-up) {}

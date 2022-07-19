@@ -1,5 +1,5 @@
 .team-unit {
-  margin-bottom: 15em;
+  margin-bottom: 200px;
   &__content {
     background-color: $color-primary;
     color: white;
@@ -66,7 +66,7 @@
 @include for-size(phone-only) {
   .team-unit {
     margin-bottom: 8em;
-    padding: 0 15px;
+    padding: 0 16px;
     &__content {
       flex-direction: column;
       .team-unit__co-worker {
@@ -102,3 +102,9 @@
     }
   }
 }
+
+@include for-size(tablet-portrait-up) {}
+
+@include for-size(tablet-landscape-up) {}
+
+@include for-size(desktop-up) {}

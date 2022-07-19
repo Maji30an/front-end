@@ -2,8 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
     <title>practice 1</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
 </head>
 <body>
     <section class="header">
@@ -130,13 +132,13 @@
                     </div>
                 </div>
             </section>
-            <section class="comments">
+            <section class="comments swiper">
                 <div class="title">
                     <span class="title__line"></span>
                     <h2 class="title__text">Thanks for your sweet words to us</h2>
                     <span class="dot">
                     <ul class="dot__list">
-                        <li class="dot__item dot__item--active"></li>
+                        <li class="dot__item"></li>
                         <li class="dot__item"></li>
                         <li class="dot__item"></li>
                         <li class="dot__item"></li>
@@ -144,8 +146,8 @@
                     </ul>
                 </span>
                 </div>
-                <div class="comments__slider">
-                    <article class="comment">
+                <div class="comments__slider swiper-wrapper">
+                    <article class="comment swiper-slide">
                         <div class="comment__header">
                             <img src="./img/img-comment01.svg" />
                             <div class="comment__details">
@@ -160,7 +162,7 @@
                             <span class="comment-star"><img src="img/stars-fill.svg" class="comment__img-star-icon"></span>
                         </div>
                     </article>
-                    <article class="comment">
+                    <article class="comment swiper-slide">
                         <div class="comment__header">
                             <img src="./img/img-comment02.svg" />
                             <div class="comment__details">
@@ -175,7 +177,7 @@
                             <span class="comment-star"><img src="img/stars-fill.svg" class="comment__img-star-icon" /></span>
                         </div>
                     </article>
-                    <article class="comment">
+                    <article class="comment swiper-slide">
                         <div class="comment__header">
                             <img src="./img/img-comment03.svg" />
                             <div class="comment__details">
@@ -190,7 +192,7 @@
                             <span class="comment-star"><img src="img/stars-fill-not-1.svg" class="comment__img-star-icon" /></span>
                         </div>
                     </article>
-                    <article class="comment">
+                    <article class="comment swiper-slide">
                         <div class="comment__header">
                             <img src="./img/img-comment04.svg" />
                             <div class="comment__details">
@@ -207,12 +209,12 @@
                     </article>
                 </div>
                 <div class="comments__buttons-slider">
-                    <button class="comments__button-slider">
+                    <button class="comments__button-slider comments__button-slider-prev">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
                             <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
                         </svg>
                     </button>
-                    <button class="comments__button-slider comments__button-slider--active">
+                    <button class="comments__button-slider comments__button-slider-next comments__button-slider--active">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
                             <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
                         </svg>
@@ -474,5 +476,6 @@
         </div>
     </footer>
 </body>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 <script src="js/script.js"></script>
 </html>
