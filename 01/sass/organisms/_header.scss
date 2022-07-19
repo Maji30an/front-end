@@ -82,7 +82,8 @@
 @include for-size(phone-only) {
   .header {
     background-image: none;
-    margin-bottom: 2em;
+    padding-bottom: 0;
+    margin-bottom: 80px;
     &__btn-menu {
       display: flex;
       background-image: url("/01/img/bg-header.svg");

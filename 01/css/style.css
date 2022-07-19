@@ -171,7 +171,8 @@
 @media (max-width: 599px) {
   .header {
     background-image: none;
-    margin-bottom: 2em;
+    padding-bottom: 0;
+    margin-bottom: 80px;
   }
   .header__btn-menu {
     display: flex;
@@ -332,7 +333,7 @@
 
 @media (max-width: 599px) {
   .team-unit {
-    margin-bottom: 8em;
+    margin-bottom: 80px;
     padding: 0 16px;
   }
   .team-unit__content {
@@ -475,7 +476,7 @@
 @media (max-width: 599px) {
   .comments {
     padding: 0 16px;
-    margin-bottom: 8em;
+    margin-bottom: 80px;
   }
   .comments .dot {
     display: none;
