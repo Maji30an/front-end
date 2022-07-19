@@ -1,3 +1,13 @@
+.phone {
+  .container {
+    position: relative;
+    .phone__img {
+      position: absolute;
+      right: 0;
+      top: -230px;
+    }
+  }
+}
 .phone-form {
   width: 74%;
   display: inline-block;
@@ -42,12 +52,21 @@
 
 @include for-size(phone-only) {
   .phone {
+    width: 100%;
     .container {
       padding: 0 16px;
+      .phone__img {
+        display: block;
+        position: absolute;
+        width: 100%;
+        right: 0;
+        top: -100px;
+        padding: 0 16px;
+      }
       .phone-form {
         width: 100%;
         padding: 20px;
-        margin: 40px 0 80px;
+        margin: 10em 0 80px;
         .title {
           margin-bottom: 40px;
           &__text {

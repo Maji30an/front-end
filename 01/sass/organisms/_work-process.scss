@@ -4,15 +4,6 @@
   background-size: cover;
   height: 1490px;
   padding: 90px 0;
-  .container {
-    position: relative;
-    .work-process__img {
-      position: absolute;
-      right: 0;
-      bottom: -23em;
-    }
-  }
-
   .process-line {
     border: none;
     background: $color-light-gray;
@@ -80,7 +71,7 @@
       }
       .process__options {
         list-style-type: none;
-        border-left: 1px solid $color-light-gray;
+        border-left: 2px solid $color-light-gray;
         margin-left: 10px;
         padding-left: 30px;
         padding-top: 20px;
@@ -95,54 +86,17 @@
 }
 
 @include for-size(phone-only) {
-  .team-unit {
-    margin-bottom: 8em;
-    padding: 0 16px;
-    &__content {
-      flex-direction: column;
-      .team-unit__co-worker {
-        width: 100%;
-        padding: 0;
-        .team-unit__number {
-          background-size: contain;
-          width: 40%;
-          margin: 30px 0 0 30px;
-        }
-        .team-unit__text {
-          @include font(null, 24px, null);
-          padding: 0 16px 30px;
-        }
-      }
-      .team-unit__persons {
-        width: 100%;
-        justify-content: flex-start;
-        .person {
-          width: 50%;
-          height: 170px;
-          &__details {
-            padding: 6em 4em 0 1em;
-          }
-          &__name {
-            @include font(600, 16px, 18px);
-          }
-          &__job {
-            @include font(500, 12px, 14px);
-          }
-        }
-      }
-    }
-  }
-}
-
-@include for-size(phone-only) {
   .work-process {
+    height: 100%;
+    padding: 0 0 148px;
     .container {
       padding: 0 16px;
       .process-line {
         display: none;
-        .work-process__process {
-          flex-direction: column;
-        }
+      }
+      .work-process__process {
+        flex-direction: column;
+        gap: 40px;
       }
     }
   }

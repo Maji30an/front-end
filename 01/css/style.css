@@ -496,14 +496,6 @@
   height: 1490px;
   padding: 90px 0;
 }
-.work-process .container {
-  position: relative;
-}
-.work-process .container .work-process__img {
-  position: absolute;
-  right: 0;
-  bottom: -23em;
-}
 .work-process .process-line {
   border: none;
   background: #DDDDDD;
@@ -575,7 +567,7 @@
 }
 .work-process__process .process .process__options {
   list-style-type: none;
-  border-left: 1px solid #DDDDDD;
+  border-left: 2px solid #DDDDDD;
   margin-left: 10px;
   padding-left: 30px;
   padding-top: 20px;
@@ -589,59 +581,30 @@
 }
 
 @media (max-width: 599px) {
-  .team-unit {
-    margin-bottom: 8em;
-    padding: 0 16px;
+  .work-process {
+    height: 100%;
+    padding: 0 0 148px;
   }
-  .team-unit__content {
-    flex-direction: column;
-  }
-  .team-unit__content .team-unit__co-worker {
-    width: 100%;
-    padding: 0;
-  }
-  .team-unit__content .team-unit__co-worker .team-unit__number {
-    background-size: contain;
-    width: 40%;
-    margin: 30px 0 0 30px;
-  }
-  .team-unit__content .team-unit__co-worker .team-unit__text {
-    font-size: 24px;
-    padding: 0 16px 30px;
-  }
-  .team-unit__content .team-unit__persons {
-    width: 100%;
-    justify-content: flex-start;
-  }
-  .team-unit__content .team-unit__persons .person {
-    width: 50%;
-    height: 170px;
-  }
-  .team-unit__content .team-unit__persons .person__details {
-    padding: 6em 4em 0 1em;
-  }
-  .team-unit__content .team-unit__persons .person__name {
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 18px;
-  }
-  .team-unit__content .team-unit__persons .person__job {
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 14px;
-  }
-}
-@media (max-width: 599px) {
   .work-process .container {
     padding: 0 16px;
   }
   .work-process .container .process-line {
     display: none;
   }
-  .work-process .container .process-line .work-process__process {
+  .work-process .container .work-process__process {
     flex-direction: column;
+    gap: 40px;
   }
 }
+.phone .container {
+  position: relative;
+}
+.phone .container .phone__img {
+  position: absolute;
+  right: 0;
+  top: -230px;
+}
+
 .phone-form {
   width: 74%;
   display: inline-block;
@@ -689,13 +652,24 @@
 }
 
 @media (max-width: 599px) {
+  .phone {
+    width: 100%;
+  }
   .phone .container {
+    padding: 0 16px;
+  }
+  .phone .container .phone__img {
+    display: block;
+    position: absolute;
+    width: 100%;
+    right: 0;
+    top: -100px;
     padding: 0 16px;
   }
   .phone .container .phone-form {
     width: 100%;
     padding: 20px;
-    margin: 40px 0 80px;
+    margin: 10em 0 80px;
   }
   .phone .container .phone-form .title {
     margin-bottom: 40px;
