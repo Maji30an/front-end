@@ -22,24 +22,38 @@
     &__menu {
       flex-direction: column;
       gap: 0;
-      .nav__item {
-        &:hover {
-          background-color: rgba(221, 221, 221, 0.2);
-          .nav__link {
-            color: $color-primary;
-          }
-        }
-      }
-      .nav__link {
-        @include font(null, null, 40px);
-        padding-left: 16px;
-      }
+    }
+    .nav__link {
+      @include font(null, null, 40px);
+      padding-left: 16px;
     }
   }
 }
 
-@include for-size(tablet-portrait-up) {}
+@include for-size(tablet-portrait-up) {
+  .nav {
+    display: block;
+    margin-top: 8px;
+    width: 100%;
+    &__menu {
+      flex-direction: column;
+      gap: 0;
+    }
+    .nav__link {
+      @include font(null, null, 40px);
+      padding-left: 16px;
+    }
+  }
+}
 
-@include for-size(tablet-landscape-up) {}
+@include for-size(tablet-landscape-up) {
+  .nav {
+    &__menu {
+      gap: 30px;
+    }
+  }
+}
 
-@include for-size(desktop-up) {}
+@include for-size(desktop-up) {
+
+}

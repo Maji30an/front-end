@@ -25,3 +25,15 @@
     }
   }
 }
+@include for-size(tablet-portrait-up) {
+  .title {
+    gap: 16px;
+    margin-bottom: 2em;
+    &__line {
+      padding: 2px 20px;
+    }
+    &__text {
+      @include font(null, 24px, 40px);
+    }
+  }
+}

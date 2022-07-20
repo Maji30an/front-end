@@ -106,8 +106,24 @@
   }
 }
 
-@include for-size(tablet-portrait-up) {}
+@include for-size(tablet-portrait-up) {
+  .team-unit {
+    padding: 0 16px;
+    &__content {
+      flex-direction: column;
+    }
+  }
+}
 
-@include for-size(tablet-landscape-up) {}
+@include for-size(tablet-landscape-up) {
+  .team-unit {
+    padding: 0 16px;
+    &__content {
+      flex-direction: row;
+    }
+  }
+}
 
-@include for-size(desktop-up) {}
+@include for-size(desktop-up) {
+
+}
