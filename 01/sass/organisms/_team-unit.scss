@@ -111,6 +111,12 @@
     padding: 0 16px;
     &__content {
       flex-direction: column;
+      .team-unit__co-worker {
+        max-width: 100%;
+      }
+      .team-unit__persons {
+        max-width: 100%;
+      }
     }
   }
 }

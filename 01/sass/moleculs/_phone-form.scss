@@ -91,8 +91,91 @@
   }
 }
 
-@include for-size(tablet-portrait-up) {}
+@include for-size(tablet-portrait-up) {
+  .phone {
+    width: 100%;
+    .container {
+      padding: 0 16px;
+      .phone__img {
+        display: block;
+        position: absolute;
+        width: 602px;
+        height: 100%;
+        right: 0;
+        top: -140px;
+        padding: 0 16px;
+      }
+      .phone-form {
+        width: 70%;
+        padding: 20px;
+        margin: 10em 0 80px;
+        .title {
+          margin-bottom: 40px;
+          &__text {
+            width: 100%;
+          }
+        }
+        &__group {
+          flex-direction: row;
+          gap: 4px;
+        }
+        &__input {
+          padding: 10px 16px;
+          @include font(null, 16px, 20px);
+        }
+        &__btn {
+          @include font(null, 18px, null);
+          gap: 16px;
+          padding: 10px 20px;
+        }
+      }
+    }
+  }
+}
 
-@include for-size(tablet-landscape-up) {}
+@include for-size(tablet-landscape-up) {
+  .phone {
+    width: 100%;
+    .container {
+      padding: 0 16px;
+      .phone__img {
+        display: block;
+        position: absolute;
+        width: 755px;
+        height: 500px;
+        right: 0;
+        top: -100px;
+        padding: 0 16px;
+      }
+      .phone-form {
+        width: 70%;
+        padding: 20px;
+        margin: 10em 0 80px;
+        .title {
+          margin-bottom: 60px;
+          &__line {
+            padding: 2px 25px;
+          }
+          &__text {
+            width: 100%;
+          }
+        }
+        &__group {
+          flex-direction: row;
+          gap: 8px;
+        }
+        &__input {
+          padding: 10px 16px;
+          @include font(null, 20px, 24px);
+        }
+        &__btn {
+          @include font(null, 25px, null);
+          gap: 16px;
+          padding: 16px 30px;
+        }
+      }
+    }
+  }
+}
 
 @include for-size(desktop-up) {}
