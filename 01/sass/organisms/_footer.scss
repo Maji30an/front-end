@@ -4,7 +4,6 @@
   color: white;
 
   .line {
-    height: 280px;
     background-image: url("/01/img/line.svg");
     background-repeat: no-repeat;
     background-size: contain;
@@ -12,10 +11,9 @@
     padding-top: 50px;
     .footer__note {
       @include font(500, 14px, 20px);
-      width: 770px;
       text-align: center;
       color: $color-light-gray;
-      margin: 30px auto 50px;
+      margin: 30px 200px 50px;
     }
     .social-icons {
       list-style-type: none;
@@ -28,7 +26,7 @@
     }
   }
   .nav {
-    margin: 40px 0 70px;
+    margin: 50px 0 70px;
     .nav__link {
       color: white;
       &:hover {
@@ -41,8 +39,8 @@
     justify-content: space-between;
     align-items: center;
     .cantact {
-      width: 570px;
       @extend .info;
+      gap: 75px;
       &__title {
         @include font(500, 14px, 16px);
         color: $color-light-gray;
@@ -69,6 +67,7 @@
   .footer {
     padding: 20px 0 40px;
     .line-small {
+      width: 100%;
       background-image: url("/01/img/line.svg");
       background-repeat: no-repeat;
       background-size: contain;
@@ -115,10 +114,7 @@
   .footer {
     padding: 20px 0 40px;
     .line-small {
-      background-image: url("/01/img/line.svg");
-      background-repeat: no-repeat;
-      background-size: contain;
-      padding: 4em 0 0;
+      display: none;
     }
     .line {
       .footer__note {
@@ -162,43 +158,41 @@
     padding: 20px 0 40px;
     text-align: center;
     .line-small {
-      background-image: url("/01/img/line.svg");
-      background-repeat: no-repeat;
-      background-size: contain;
-      padding: 4em 0 0;
+      display: none;
     }
     .line {
+      text-align: center;
+      .container {
+        padding: 0 16px;
+      }
       .footer__note {
         width: 100%;
         margin: 24px auto 32px;
-        padding: 0 16px;
+        padding: 0 184px;
       }
-    }
-    .nav {
-      margin: 2em 0 30px;
-      &__menu {
-        gap: 20px;
-        align-items: center;
-        .nav__link {
-          padding: 0;
+      .nav {
+        &__menu {
+          gap: 20px;
+          align-items: center;
+          .nav__link {
+            padding: 0;
+          }
         }
       }
-    }
-    .info {
-      flex-direction: column;
-      gap: 40px;
-      .cantact {
-        flex-direction: column;
-        .call {
-          flex-direction: column;
-          gap: 10px;
+      .info {
+        flex-direction: row;
+        justify-content: space-evenly;
+        gap: 40px;
+        .cantact {
+          flex-direction: row;
+          .call {
+            flex-direction: row;
+            gap: 10px;
+          }
+          &__details {
+            text-align: center;
+          }
         }
-        &__details {
-          text-align: center;
-        }
-      }
-      .copy-right {
-        margin: 40px auto;
       }
     }
   }
