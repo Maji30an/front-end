@@ -397,7 +397,6 @@
   flex-direction: column;
   justify-content: space-between;
   padding: 60px 45px;
-  max-width: 40%;
 }
 .team-unit__co-worker .team-unit__number {
   background-image: url("/01/img/6.png");
@@ -414,7 +413,7 @@
 .team-unit__persons {
   display: flex;
   flex-wrap: wrap;
-  max-width: 60%;
+  justify-content: flex-end;
 }
 .team-unit__persons .person {
   max-width: 234px;
@@ -465,7 +464,6 @@
     flex-direction: column;
   }
   .team-unit__content .team-unit__co-worker {
-    max-width: 100%;
     padding: 0;
   }
   .team-unit__content .team-unit__co-worker .team-unit__number {
@@ -478,7 +476,6 @@
     padding: 0 16px 30px;
   }
   .team-unit__content .team-unit__persons {
-    max-width: 100%;
     justify-content: flex-start;
   }
   .team-unit__content .team-unit__persons .person {
@@ -505,12 +502,6 @@
   }
   .team-unit__content {
     flex-direction: column;
-  }
-  .team-unit__content .team-unit__co-worker {
-    max-width: 100%;
-  }
-  .team-unit__content .team-unit__persons {
-    max-width: 100%;
   }
 }
 @media (min-width: 900px) and (max-width: 1199px) {

@@ -10,7 +10,6 @@
     flex-direction: column;
     justify-content: space-between;
     padding: 60px 45px;
-    max-width: 40%;
     .team-unit__number {
       background-image: url("/01/img/6.png");
       background-repeat: no-repeat;
@@ -25,7 +24,7 @@
   &__persons {
     display: flex;
     flex-wrap: wrap;
-    max-width: 60%;
+    justify-content: flex-end;
     .person {
       max-width: 234px;
       max-height: 234px;
@@ -73,7 +72,6 @@
     &__content {
       flex-direction: column;
       .team-unit__co-worker {
-        max-width: 100%;
         padding: 0;
         .team-unit__number {
           background-size: contain;
@@ -86,11 +84,11 @@
         }
       }
       .team-unit__persons {
-        max-width: 100%;
         justify-content: flex-start;
         .person {
           width: 164px;
           height: 164px;
+
           &__details {
             padding: 85px 0 0 20px;
           }
@@ -111,12 +109,6 @@
     padding: 0 16px;
     &__content {
       flex-direction: column;
-      .team-unit__co-worker {
-        max-width: 100%;
-      }
-      .team-unit__persons {
-        max-width: 100%;
-      }
     }
   }
 }
