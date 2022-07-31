@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import Customers from "./components/Customers";
 import Cards from "./components/Cards";
 import Seo from "./components/Seo";
+import About from "./components/About";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
            <Customers />
            <Cards />
            <Seo />
+           <About />
         </main>
      </>
   );
