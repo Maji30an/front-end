@@ -15,6 +15,10 @@ module.exports = {
       },
       boxShadow: {
         my: '0px 10px 40px rgba(0, 0, 0, 0.1)',
+        us: '5px 5px 25px rgba(0, 0, 0, 0.08)',
+      },
+      listStyleType: {
+        circle: 'url()'
       }
     },
   },
