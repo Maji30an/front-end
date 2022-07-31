@@ -56,10 +56,10 @@ function App() {
             <div className='row justify-content-between'>
                <section className='col-3'>
                   <form onSubmit={handlerSubmit}>
-                     <Input type='text' name='name' label='Name' value={user.name} change={handlerChange}/>
+                     <Input type='text'  name='name'  label='Name'  value={user.name}  change={handlerChange}/>
                      <Input type='email' name='email' label='Email' value={user.email} change={handlerChange}/>
-                     <Input type='tel' name='phone' label='Phone' value={user.phone} change={handlerChange}/>
-                     <Input type='file' name='formFile' label='Upload File' change={handlerFile}/>
+                     <Input type='tel'   name='phone' label='Phone' value={user.phone} change={handlerChange}/>
+                     <Input type='file'  name='formFile' label='Upload File' change={handlerFile}/>
                      <Button type='submit' value='Add' class="btn btn-primary w-100"/>
                   </form>
                </section>

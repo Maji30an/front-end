@@ -1,16 +1,16 @@
 import React from 'react';
 import Button from "./current/Button";
 import Logo from "./current/Logo";
-import Navigation from "./Navigation";
+import Menu from "./Menu";
 import imgHeader from './../assets/img/Billy-43.svg';
 
 const Header = () => {
   return(
-     <header className="bg-[url('./assets/img/bg-red.svg')] bg-no-repeat max-w-[1920px] mx-auto pb-[217px]">
-         <div className='3xl:container mx-auto'>
+     <header className="bg-[url('./assets/img/bg-red.svg')] bg-no-repeat max-w-[1920px] mx-auto pb-[217px] overflow-hidden">
+         <div className='container 3xl:container mx-auto'>
             <section className='flex justify-between items-center pt-[4.875rem] mb-[4.6875rem]'>
                <Logo />
-               <Navigation />
+               <Menu />
             </section>
             <section className='flex relative'>
                <div className='inline-block text-white my-28'>
