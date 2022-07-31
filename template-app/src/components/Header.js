@@ -14,9 +14,9 @@ const Header = () => {
             </section>
             <section className='flex relative'>
                <div className='inline-block text-white my-28'>
-                  <h2 className='font-bold text-7xl leading-[5.625rem] tracking-[0.045em] max-w-[850px] mb-[25px]'>We are The Brilliants In Terms Of Digital Marketing</h2>
-                  <p className='font-medium text-2xl leading-[1.875rem] tracking-[0.045em] mb-[55px]'>Book your 30-minute free strategy call</p>
-                  <Button />
+                  <h2 className='font-bold text-7xl leading-[5.625rem] tracking-45 max-w-[850px] mb-[25px]'>We are The Brilliants In Terms Of Digital Marketing</h2>
+                  <p className='font-medium text-2xl leading-[1.875rem] tracking-45 mb-[55px]'>Book your 30-minute free strategy call</p>
+                  <Button value='Book Now'/>
                </div>
                <img src={imgHeader} alt='img-header' className='absolute -top-[185px] -right-[145px]' />
             </section>
