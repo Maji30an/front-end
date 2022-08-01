@@ -17,7 +17,7 @@ const Counter = () => {
             {params.map((param, index) =>
                <li className='flex flex-col items-center gap-10' key={index}>
                   <img src={param.src} alt={param.title} />
-                  <span className='font-[Poppins] font-secondary font-semibold text-[28px] leading-[35px] tracking-45'>{param.title}</span>
+                  <span className='font-poppins font-secondary font-semibold text-[28px] leading-[35px] tracking-45'>{param.title}</span>
                </li>
             )}
          </ul>

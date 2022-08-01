@@ -7,12 +7,14 @@ import About from "./components/About";
 import Counter from "./components/Counter";
 import Benfits from "./components/Benfits";
 import Testimonial from "./components/Testimonial";
+import Blog from "./components/Blog";
+import Footer from "./components/Footer";
 
 function App() {
   return (
-     <>
+     <div className='font-balsamiq'>
         <Header />
-        <main className='container 3xl:container mx-auto h-screen'>
+        <main className='container 3xl:container mx-auto'>
            <Customers />
            <Services />
            <Seo />
@@ -20,8 +22,10 @@ function App() {
            <Counter />
            <Benfits />
            <Testimonial />
+           <Blog />
         </main>
-     </>
+        <Footer />
+     </div>
   );
 }
 

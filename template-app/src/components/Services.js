@@ -16,7 +16,7 @@ const Services = () => {
    return(
       <section className='space-y-[90px]'>
          <div className='text-center space-y-[30px]'>
-            <h2 className='text-primary font-[Poppins] font-medium text-[28px] leading-[35px] tracking-45'>Services</h2>
+            <h2 className='text-primary font-poppins font-medium text-[28px] leading-[35px] tracking-45'>Services</h2>
             <h3 className='font-bold text-5xl leading-[60px] tracking-45'>What We Offer</h3>
             <p className='text-secondary font-normal text-2xl leading-[30px] tracking-45 max-w-[1023px] mx-auto'>Ea nam dicat utamur tincidunt, cu sea audiam vocibus. Esse nemore mei eu.
                Virtute commune dissentiet te pri, te sonet periculis mel.</p>
