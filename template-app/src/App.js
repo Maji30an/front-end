@@ -1,11 +1,12 @@
 import './App.css';
 import Header from "./components/Header";
 import Customers from "./components/Customers";
-import Cards from "./components/Cards";
+import Services from "./components/Services";
 import Seo from "./components/Seo";
 import About from "./components/About";
 import Counter from "./components/Counter";
 import Benfits from "./components/Benfits";
+import Testimonial from "./components/Testimonial";
 
 function App() {
   return (
@@ -13,11 +14,12 @@ function App() {
         <Header />
         <main className='container 3xl:container mx-auto h-screen'>
            <Customers />
-           <Cards />
+           <Services />
            <Seo />
            <About />
            <Counter />
            <Benfits />
+           <Testimonial />
         </main>
      </>
   );
