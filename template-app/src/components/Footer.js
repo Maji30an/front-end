@@ -23,14 +23,14 @@ const Footer = () => {
    ];
    return(
       <footer className='max-w-[1920px] mx-auto mt-[391px] bg-third'>
-         <div className='container 3xl:container mx-auto'>
-            <div className='text-center'>
+         <div className='container mx-auto'>
+            <div className='text-left lg:text-center'>
                <section className='inline-block bg-white text-center py-10 px-[296.74px] rounded-[5px] shadow-my space-y-10 -translate-y-32'>
                   <h5 className='font-bold text-5xl leading-[60px] tracking-45'>Have a project in mind?</h5>
                   <Button color='primary' value='Book Now' />
                </section>
             </div>
-            <div className='flex justify-between items-start'>
+            <div className='flex flex-wrap justify-between items-start'>
                <div className='flex flex-col gap-2 text-white w-1/4 mb-[70px]'>
                   <Logo class='-translate-y-3' />
                   <p className='font-poppins font-medium text-lg leading-[47.52px] tracking-45 mb-10'>
