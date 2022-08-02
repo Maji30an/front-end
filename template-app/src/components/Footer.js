@@ -22,7 +22,7 @@ const Footer = () => {
       {title: 'Community', items: ['About Us', 'Our clients', 'Legal notic']}
    ];
    return(
-      <footer className='max-w-[1920px] mx-auto mt-[391px] bg-third'>
+      <footer className='mt-[391px] bg-third'>
          <div className='container mx-auto'>
             <div className='text-left lg:text-center'>
                <section className='inline-block bg-white text-center py-10 px-[296.74px] rounded-[5px] shadow-my space-y-10 -translate-y-32'>
@@ -50,7 +50,7 @@ const Footer = () => {
                <FormEmail />
             </div>
          </div>
-         <img src={bgFooter} alt='bg' />
+         <img src={bgFooter} alt='bg' className='w-full' />
       </footer>
    );
 }

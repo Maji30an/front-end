@@ -3,12 +3,14 @@ import Button from "./current/Button";
 import Logo from "./current/Logo";
 import Menu from "./Menu";
 import imgHeader from './../assets/img/Billy-43.svg';
+import hamberger from './../assets/img/icon-menu-64.svg';
 
 const Header = () => {
   return(
-     <header className="bg-[url('./assets/img/bg-red.svg')] bg-no-repeat max-w-[1920px] mx-auto pb-[217px] overflow-hidden">
+     <header className="bg-[url('./assets/img/bg-red.svg')] bg-no-repeat bg-contain w-full pb-[217px] overflow-hidden">
          <div className='container mx-auto'>
             <section className='flex justify-between items-center pt-[4.875rem] mb-[4.6875rem]'>
+               <img src={hamberger} alt='menu' />
                <Logo />
                <Menu />
             </section>

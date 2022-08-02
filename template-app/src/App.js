@@ -14,17 +14,17 @@ function App() {
   return (
      <div className='font-balsamiq'>
         <Header />
-        {/*<main className='container mx-auto'>*/}
-        {/*   <Customers />*/}
-        {/*   <Services />*/}
-        {/*   <Seo />*/}
-        {/*   <About />*/}
-        {/*   <Counter />*/}
-        {/*   <Benfits />*/}
-        {/*   <Testimonial />*/}
-        {/*   <Blog />*/}
-        {/*</main>*/}
-        {/*<Footer />*/}
+        <main className='container mx-auto'>
+           <Customers />
+           <Services />
+           <Seo />
+           <About />
+           <Counter />
+           <Benfits />
+           <Testimonial />
+           <Blog />
+        </main>
+        <Footer />
      </div>
   );
 }
