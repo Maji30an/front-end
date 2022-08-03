@@ -1,10 +1,11 @@
 import React from "react";
+import Counter from "./current/Counter";
 import first from './../assets/img/40+.svg';
 import second from './../assets/img/120+.svg';
 import third from './../assets/img/130.svg';
 import fourth from './../assets/img/24.svg';
 
-const Counter = () => {
+const Counters = () => {
    const params = [
       {src: first, title: 'Happy Clients'},
       {src: second, title: 'Project Complate'},
@@ -13,16 +14,13 @@ const Counter = () => {
    ];
    return(
       <section className='shadow-my my-[200px] py-[50px]'>
-         <ul className='flex justify-evenly items-center '>
+         <div className='flex justify-evenly items-center '>
             {params.map((param, index) =>
-               <li className='flex flex-col items-center gap-10' key={index}>
-                  <img src={param.src} alt={param.title} />
-                  <span className='font-poppins font-secondary font-semibold text-[28px] leading-[35px] tracking-45'>{param.title}</span>
-               </li>
+               <Counter key={index} src={param.src} title={param.title} />
             )}
-         </ul>
+         </div>
       </section>
    );
 }
 
-export default Counter;
+export default Counters;
