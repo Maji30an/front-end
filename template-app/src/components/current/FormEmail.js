@@ -1,5 +1,5 @@
 import React from "react";
-import sendIcon from "../assets/img/send-icon.svg";
+import sendIcon from "../../assets/img/send-icon.svg";
 
 const FormEmail = () => {
    return(

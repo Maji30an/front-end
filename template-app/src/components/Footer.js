@@ -6,7 +6,7 @@ import facebook from './../assets/img/facebook.svg';
 import google from './../assets/img/google.svg';
 import twitter from './../assets/img/twitter.svg';
 import youtube from './../assets/img/youtube.svg';
-import FormEmail from "./FormEmail";
+import FormEmail from "./current/FormEmail";
 import ListMenu from "./ListMenu";
 
 const Footer = () => {

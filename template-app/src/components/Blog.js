@@ -1,8 +1,15 @@
 import React from "react";
-import Slide from "./Slide";
+import Slide from "./current/Slide";
+import {Pagination, A11y} from "swiper";
+import {Swiper, SwiperSlide} from 'swiper/react';
+import 'swiper/css';
+// import 'swiper/css/pagination';
 
 const Blog = () => {
-   const pics = ['bg-blog-pic-1', 'bg-blog-pic-2', 'bg-blog-pic-3'];
+   const pics = [
+      'bg-blog-pic-1', 'bg-blog-pic-2', 'bg-blog-pic-3',
+      'bg-blog-pic-1', 'bg-blog-pic-2', 'bg-blog-pic-3',
+   ];
    const dots = ['bg-dot w-3 h-3', 'bg-primary w-4 h-4', 'bg-dot w-3 h-3', 'bg-dot w-3 h-3'];
    return(
       <section className='mt-[439px]'>
@@ -12,14 +19,19 @@ const Blog = () => {
             <p className='text-secondary font-normal text-2xl leading-[30px] tracking-45 max-w-[800px] mx-auto'>Senectus et scelerisque convallis at sollicitudin tellus volutpa quam. Viverra placerat morbi ut imperdiet.</p>
          </div>
          <div className='mt-20'>
-            <div className='flex justify-between'>
+            <Swiper
+               modules={[Pagination, A11y]}
+               spaceBetween={40}
+               slidesPerView={3}
+               pagination={{ clickable: true}}
+            >
                {pics.map((pic, i) =>
-                  <Slide class={pic} key={i} />
+                  <SwiperSlide key={i}><Slide class={pic} /></SwiperSlide>
                )}
+            </Swiper>
+            <div className='flex justify-center items-center gap-5 mt-[50px]'>
+               {dots.map((dot, i) => <span key={i} className={`${dot} rounded-full`}></span>)}
             </div>
-            <ul className='flex justify-center items-center gap-5 mt-[50px]'>
-               {dots.map((dot, i) => <li key={i} className={`${dot} rounded-full`}></li>)}
-            </ul>
          </div>
       </section>
    );

@@ -23,7 +23,6 @@ function App() {
            <Benfits />
            <Testimonial />
            <Blog />
-
         </main>
         <Footer />
      </div>

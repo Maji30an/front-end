@@ -25,7 +25,7 @@ const Testimonial = () => {
             <h3 className='font-bold text-5xl leading-[60px] tracking-45'>What Our Customers Say</h3>
             <p className='text-secondary font-normal text-2xl leading-[30px] tracking-45 max-w-[800px] mx-auto'>Senectus et scelerisque convallis at sollicitudin tellus volutpa quam. Viverra placerat morbi ut imperdiet.</p>
          </div>
-         <div className='flex flex-col items-center mt-[100px] bg-testimonial bg-no-repeat bg-contain bg-center'>
+         <div className='flex flex-col items-center mt-[100px] bg-no-repeat bg-contain bg-center'>
             <img src={selectPic} alt='customer' className='w-[200px] h-[200px]' />
             <p className='font-poppins font-semibold text-secondary text-2xl leading-[38.28px] tracking-45 max-w-[1404px] text-center mt-10'>Senectus et scelerisque convallis at sollicitudin tellus volutpat quam. Ipsum bibendum iaculis gravida adipiscing porttitor purus, sodales tristique. Viverra placerat morbi ut imperdiet.</p>
             <h4 className='font-poppins font-medium text-4xl text-primary tracking-45 mt-10 mb-2.5'>Keya Akter</h4>
