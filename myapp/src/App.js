@@ -50,16 +50,20 @@ function App() {
       setIsEdit(true);
    }
 
+   const params = [
+      {type:'text', name:'name', label:'Name',  value:user.name, change:handlerChange},
+      {type:'email', name:'email', label:'Email', value: user.email, change:handlerChange},
+      {type:'tel', name: 'phone', label:'Phone', value: user.phone ,change:handlerChange},
+      {type:'file', name: 'formFile', label:'Upload File', change:handlerFile}
+   ];
+
    return(
       <div className='App container-fluid'>
          <div className='pt-3 px-4'>
             <div className='row justify-content-between'>
                <section className='col-3'>
                   <form onSubmit={handlerSubmit}>
-                     <Input type='text'  name='name'  label='Name'  value={user.name}  change={handlerChange}/>
-                     <Input type='email' name='email' label='Email' value={user.email} change={handlerChange}/>
-                     <Input type='tel'   name='phone' label='Phone' value={user.phone} change={handlerChange}/>
-                     <Input type='file'  name='formFile' label='Upload File' change={handlerFile}/>
+                     {params.map((param, i) => <Input key={i} {...param}/>)}
                      <Button type='submit' value='Add' class="btn btn-primary w-100"/>
                   </form>
                </section>

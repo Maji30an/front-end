@@ -1,10 +1,11 @@
 import React from "react";
 import Slide from "./current/Slide";
-import {Pagination, A11y} from "swiper";
+import {Pagination} from "swiper";
 import {Swiper, SwiperSlide} from 'swiper/react';
 import 'swiper/css';
 
 const Blog = () => {
+
    const pics = [
       'bg-blog-pic-1', 'bg-blog-pic-2', 'bg-blog-pic-3',
       'bg-blog-pic-1', 'bg-blog-pic-2', 'bg-blog-pic-3',
