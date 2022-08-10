@@ -9,10 +9,12 @@ import Benfits from "./components/Benfits";
 import Testimonial from "./components/Testimonial";
 import Blog from "./components/Blog";
 import Footer from "./components/Footer";
+import {ImageProvider} from "./context/ImageContext";
 
 function App() {
   return (
-     <div className="font-balsamiq bg-navbar bg-contain bg-no-repeat">
+     <ImageProvider>
+     <div className="font-balsamiq bg-navbar bg-contain bg-no-repeat bg-navbar">
         <Header />
         <main className='container mx-auto'>
            <Customers />
@@ -26,6 +28,7 @@ function App() {
         </main>
         <Footer />
      </div>
+     </ImageProvider>
   );
 }
 

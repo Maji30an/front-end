@@ -14,7 +14,7 @@ module.exports = {
         dot: '#C4C4C4',
       },
       screens: {
-        '3xl': '1640px'
+        '2xl': '1640px'
       },
       letterSpacing: {
         45: '.045em'
